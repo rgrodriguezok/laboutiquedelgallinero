@@ -1,0 +1,109 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuthContext } from '../contexts/AuthContext';
+import { crearUsuario, loginEmailPass } from '../auth/firebase';
+import { dispararSweetBasico } from '../assets/SweetAlert';
+
+function LoginBoost2() {
+  const [usuario, setUsuario] = useState('');
+  const [password, setPassword] = useState('');
+  const [show, setShow] = useState(true)
+  const { login, user, logout, admin } = useAuthContext();
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Simulación de autenticación
+    if (usuario === 'admin' && password === '1234') {
+      login(usuario);
+      navigate('/');
+    } else {
+      alert('Credenciales incorrectas');
+    }
+  };
+
+  function registrarUsuario(e) {
+    e.preventDefault();
+    crearUsuario(usuario, password).then((user) => {
+      login(usuario)
+      dispararSweetBasico("Logeo exitoso", "", "success", "Confirmar")
+    }).catch((error) => {
+      if (error.code == "auth/invalid-credential") {
+        dispararSweetBasico("Credenciales incorrectas", "", "error", "Cerrar")
+      } if (error.code == "auth/weak-password") {
+        dispararSweetBasico("Contraseña debil", "Password should be at least 6 characters", "error", "Cerrar")
+      }
+
+    })
+  }
+
+  const handleSubmit2 = (e) => {
+    logout()
+  }
+
+  function iniciarSesionEmailPass(e) {
+    e.preventDefault();
+    loginEmailPass(usuario, password).then((user) => {
+      login(usuario)
+      dispararSweetBasico("Logeo exitoso", "", "success", "Confirmar")
+    }).catch((error) => {
+      if (error.code == "auth/invalid-credential") {
+        dispararSweetBasico("Credenciales incorrectas", "", "error", "Cerrar")
+      }
+
+    })
+  }
+
+  function handleShow(e) {
+    e.preventDefault();
+    setShow(!show)
+  }
+
+  if (user || admin) {
+    return (
+      <form onSubmit={handleSubmit2}>
+        <button type="submit" className="btn btn-danger" style={{ marginTop: "20px" }}>Cerrar sesión</button>
+
+      </form>
+    )
+  } if (!user && show) {
+    return (
+      <div className="my-3 w-50 border rounded shadow mx-auto">
+        <form onSubmit={iniciarSesionEmailPass} className="p-4 border rounded shadow " style={{ background: "white" }}>
+          <h1>Iniciar sesión </h1>
+          <div className="mb-3">
+            <label className="form-label">Email</label>
+            <input value={usuario}
+              onChange={(e) => setUsuario(e.target.value)} type="email" className="form-control" required />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Contraseña</label>
+            <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" className="form-control" required />
+          </div>
+          <button type="submit" style={{ marginTop: "2px", background: "white", color: "green" }} class="btn btn-outline-success w-15">Ingresar</button>
+          <button type="submit" style={{ marginTop: "2px", background: "white", color: "red", marginLeft: "10px" }} class="btn btn-outline-danger w-15" onClick={handleShow}>Registrate</button>
+        </form>
+      </div>
+    )
+  } if (!user && !show) {
+    return (
+      <div className="my-3 w-50 border rounded shadow mx-auto">
+        <form onSubmit={registrarUsuario} className="p-4 border rounded shadow " style={{ background: "white" }}>
+          <h1>Registrarse</h1>
+          <div className="mb-3">
+            <label className="form-label">Email</label>
+            <input value={usuario}
+              onChange={(e) => setUsuario(e.target.value)} type="email" className="form-control" required />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Contraseña</label>
+            <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" className="form-control" required />
+          </div>
+          <button type="submit" style={{ marginTop: "2px", background: "white", color: "green" }} class="btn btn-outline-success w-15" onClick={handleShow}>Registrate</button>
+          <button type="submit" style={{ marginTop: "2px", background: "white", color: "red", marginLeft: "10px" }} class="btn btn-outline-danger w-15" onClick={handleShow}>Iniciar Sesión</button>
+        </form>
+      </div>
+    )
+  }
+}
+export default LoginBoost2;
