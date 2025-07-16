@@ -5,6 +5,8 @@ https://laboutiquedelgallinero.netlify.app/
 
 git: https://github.com/rgrodriguezok/laboutiquedelgallinero.git
 
+Repositorio de archivos:  , el mismo contiene una carpeta llamada "Repositorio de imagenes", la misma esta destinada a realizar pruebas de alta de productos
+
 
 Sobre el Proyecto
 Este proyecto web fue diseñado  para la venta de indumentaria del Club Atlético River Plate. Permite a los usuarios explorar nuestro catálogo, añadir artículos al carrito de compras y realizar pedidos de manera sencilla y segura. Para los administradores, incluye funcionalidades para la gestión de productos, categorías, pedidos y usuarios.
