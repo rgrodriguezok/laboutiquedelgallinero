@@ -9,7 +9,7 @@ https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/d
 https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw95a97389/products/ADIS6482/ADIS6482-1.JPG
 https://acdn-us.mitiendanube.com/stores/001/150/754/products/1111-66e63ce8a655e96c7316880798969848-1024-1024.jpg
 
-Credencial de usuario: rgrodriguez2018@gmail.com
+Credencial de usuario: usuario@usuario.com
 Clave de usuario: 123456789
 
 Credencial de administrador: admin@admin.com
