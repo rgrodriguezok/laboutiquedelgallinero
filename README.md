@@ -12,8 +12,8 @@ https://acdn-us.mitiendanube.com/stores/001/150/754/products/1111-66e63ce8a655e9
 Credencial de usuario: rgrodriguez2018@gmail.com
 Clave de usuario: 123456789
 
-Credencial de administrador: admin@gmail.com
-Clave de usuario: test12
+Credencial de administrador: admin@admin.com
+Clave de usuario: 123456789
 
 Sobre el Proyecto
 Este proyecto web fue diseñado  para la venta de indumentaria del Club Atlético River Plate. Permite a los usuarios explorar nuestro catálogo, añadir artículos al carrito de compras y realizar pedidos de manera sencilla y segura. Para los administradores, incluye funcionalidades para la gestión de productos, categorías, pedidos y usuarios.
