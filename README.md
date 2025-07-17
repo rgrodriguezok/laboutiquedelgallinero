@@ -64,7 +64,7 @@ Usa la barra de búsqueda para encontrar productos específicos.
 Haz clic en un producto para ver sus detalles.
 Añade productos al carrito y procede al pago.
 
-Credencial de usuario: rgrodriguez2018@gmail.com
+Credencial de usuario: usuario@usuario.com
 Clave de usuario: 123456789
 
 
@@ -73,5 +73,5 @@ Para Administradores:
 Accede al panel de administración (usualmente /admin o similar) con tus credenciales.
 Desde el panel, puedes añadir, editar o eliminar productos.
 
-Credencial de administrador: admin@gmail.com
-Clave de usuario: test12
+Credencial de administrador: admin@admin.com
+Clave de usuario: 123456789
