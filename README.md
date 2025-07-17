@@ -4,7 +4,8 @@
 https://laboutiquedelgallinero.netlify.app/
 git: https://github.com/rgrodriguezok/laboutiquedelgallinero.git
 
-Repositorio de archivos:  https://1drv.ms/f/c/6d096ed80e2b3d29/EqAid9A_9V9BgpYgl8jgz6wBuYBheX7cY6x-O1NC89_EQA?e=9avHeQ, el mismo contiene una carpeta llamada "Repositorio de imagenes", la misma esta destinada a realizar pruebas de alta de productos, de la misma forma se incluye la direccion de tres imagenes para realizar tal prueba: 
+Repositorio de archivos:https://1drv.ms/f/c/6d096ed80e2b3d29/EmRxotMlF9NHlsk6i58d8XkBQiT6gutrb557YG7sW1YueA?e=YsC9YL el mismo contiene los archivos del proyecto con permisos de editor  
+Repositorio de imagenes: https://1drv.ms/f/c/6d096ed80e2b3d29/EqAid9A_9V9BgpYgl8jgz6wBuYBheX7cY6x-O1NC89_EQA?e=9avHeQ, el mismo contiene una carpeta llamada "Repositorio de imagenes", la misma esta destinada a realizar pruebas de alta de productos, de la misma forma se incluye la direccion de tres imagenes para realizar tal prueba: 
 https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwb363751b/products/ADJM2204/ADJM2204-1.JPG
 https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw95a97389/products/ADIS6482/ADIS6482-1.JPG
 https://acdn-us.mitiendanube.com/stores/001/150/754/products/1111-66e63ce8a655e96c7316880798969848-1024-1024.jpg
