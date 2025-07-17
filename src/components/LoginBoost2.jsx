@@ -99,7 +99,7 @@ function LoginBoost2() {
             <label className="form-label">Contraseña</label>
             <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" className="form-control" required />
           </div>
-          <button type="submit" style={{ marginTop: "2px", background: "white", color: "green" }} class="btn btn-outline-success w-15" onClick={handleShow}>Registrate</button>
+          <button type="submit" style={{ marginTop: "2px", background: "white", color: "green" }} class="btn btn-outline-success w-15">Registrate</button>
           <button type="submit" style={{ marginTop: "2px", background: "white", color: "red", marginLeft: "10px" }} class="btn btn-outline-danger w-15" onClick={handleShow}>Iniciar Sesión</button>
         </form>
       </div>
